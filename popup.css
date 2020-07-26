@@ -1,0 +1,83 @@
+body {
+    min-width: 400px;
+    max-width: 400px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.button-1 {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    text-transform: uppercase;
+    border-radius: 2px;
+}
+
+.button-1:hover {
+    transform:scale(1.05,1.05);
+    background-color: rgb(10, 141, 10);
+    box-shadow: 2px 5px 9px #dddddd;
+}
+
+.button-2 {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 5px;
+    margin: 7px auto;
+    text-transform: uppercase;
+    border-radius: 2px;
+    display:block;
+}
+
+.button-2:hover {
+    transform:scale(1.05,1.05);
+    background-color: rgb(10, 141, 10);
+    box-shadow: 2px 5px 9px #dddddd;
+}
+
+.success-div {
+    border: 2px solid green;
+    padding: 25px;
+    margin: 25px;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.failure-div {
+    border: 2px solid red;
+    padding: 25px;
+    margin: 25px;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.suspicious-div {
+    border: 2px solid orange;
+    padding: 25px;
+    margin: 25px;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.information-div {
+    border: 2px solid lightblue;
+    padding: 10px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.message {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.classification {
+    font-weight: bold;
+}
+
+.platform {
+    font-weight: bold;
+}

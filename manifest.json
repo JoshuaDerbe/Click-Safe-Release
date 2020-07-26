@@ -1,0 +1,50 @@
+{
+	"name": "Click Safe",
+	"version": "1.0",
+	"description": "Browse the web a little safer",
+    "permissions": [
+        "activeTab", 
+        "declarativeContent", 
+        "identity",
+        "storage", 
+        "tabs", 
+        "webRequest", 
+        "webRequestBlocking", 
+        "<all_urls>"],
+    "options_page": "options.html",
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": true
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "css": ["jquery-ui.min.css"],
+            "js": ["jquery-3.4.1.min.js", "jquery-ui.min.js", "check_links.js"],
+            "run_at": "document_start"
+        }
+    ],
+    "page_action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "images/get_started16.png",
+            "32": "images/get_started32.png",
+            "48": "images/get_started48.png",
+            "128": "images/get_started128.png"
+        }
+    },
+    "content_security_policy": "script-src 'self' 'unsafe-eval' https://apis.google.com; object-src 'self'",
+    "oauth2": {
+        "client_id": "-- INSERT OAUTH2 CLIENT ID HERE --",
+        "scopes": [
+            "https://www.googleapis.com/auth/gmail.readonly"
+        ]
+    },
+    "icons": {
+        "16": "images/get_started16.png",
+        "32": "images/get_started32.png",
+        "48": "images/get_started48.png",
+        "128": "images/get_started128.png"
+    },
+	"manifest_version": 2
+}
